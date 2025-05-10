@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href="styles.css" rel="stylesheet">
+  <title>Black Women beoming Doctors</title>
+</head>
+<body>
+
+<header>
+  <h1> Appreciating Black Women in Medicine</h1>
+  <p> Commending the trailblazers who transmuted healthcare</p>
+</header>
+
+<main>
+  <div class="doctor-card">
+    <h3>Dr. Mildred Jefferson </h3>
+    <p> One of the First few African-American woman to recieve a medical degree in the U.S. (1926)</p>
+    <button onclick="toggleBio('bio1')">Learn More</button>
+    <p id="bio1" class="bio">
+      Dr. Jefferson graduated from Harvard Medical school in 1951 and devoted her career to being a surgeon.
+    </p>
+  </div>
+
+  <div class="doctor-card">
+    <h3>Dr. Marylin Hughes Gaston </h3>
+    <p>First African-American woman to lead a public health service bureau in 1939.</p>
+    <button onclick="toggleBio('bio2')">Learn More</button>
+    <p id="bio2" class="bio">
+      Dr. Hughes Gaston had particular intrest in improving services for underserved populations.
+    </p>
+  </div>
+
+  <div class="doctor-card">
+    <h3>Dr. Jane Cooke Wright </h3>
+    <p> Dr. Cooke Wright was named Professor of Surgery and Associate Dean at New York Medical college becomig the First African-American  woman to be named Associate dean of a nationally recognized medical institution in the U.S.</p>
+    <button onclick="toggleBio('bio3')">Learn More</button>
+    <p id="bio3" class="bio">
+      Dr. Cooke Wright worked along side her father who was also a surgeon. 
+    </p>
+  </div>
+</main>
+
+<script>
+  function toggleBio(bioId) {
+    var bio = document.getElementById(bioId);
+    if (bio.style.display === "none" || bio.style.display === "") {
+      bio.style.display = "block";
+    } else {
+      bio.style.display = "none";
+    }
+  }
+</script>
+
+</body>
+</html>
